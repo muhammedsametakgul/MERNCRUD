@@ -22,7 +22,6 @@ const studentSchema = new mongoose.Schema({
         type: String,
         trim: true,
         required: [true, 'bachelor is required'],
-        unique: true,
         
     },
 

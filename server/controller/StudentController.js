@@ -7,7 +7,6 @@ exports.allStudents = async (req,res,next)=>{
         const students = await Student.find();
         
         res.status(200).json({
-            success:true,
             students
         })
         next();
@@ -42,7 +41,6 @@ exports.allStudents = async (req,res,next)=>{
             });
             
             res.status(201).json({
-                success: true,
                 student
             })
         }catch(error){
